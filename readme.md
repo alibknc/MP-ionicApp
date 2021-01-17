@@ -22,3 +22,5 @@ Uygulamayı Capacitor eklentileri kullanarak geliştirdim. Android cihazda
 test ettim. Web üzerinde de çalışmaktadır. 7 sayfa ve 2 servisten
 oluşmaktadır.
 
+Ekran görüntüleri readme.pdf dosyasındadır.
+
