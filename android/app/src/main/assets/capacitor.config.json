@@ -1,0 +1,23 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "ionick-kickstart",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    },
+    "LocalNotifications": {
+      "iconColor": "#FF0000",
+      "sound": "fanfare.wav"
+    }
+  },
+  "cordova": {},
+  "server": {
+    "url": "http://192.168.1.39:8101",
+    "cleartext": true,
+    "originalUrl": "http://192.168.1.37:8101",
+    "originalCleartext": true
+  }
+}

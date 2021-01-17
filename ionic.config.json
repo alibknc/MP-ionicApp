@@ -1,0 +1,7 @@
+{
+  "name": "ionick-kickstart",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

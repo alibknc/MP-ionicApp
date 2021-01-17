@@ -1,0 +1,33 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar [class.show-background]="showToolbar">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-image" fullscreen>
+    <ion-grid>
+        <ion-col *ngIf="sonuc">
+            <ion-title class="large-title" style="text-align:center">{{vakitler[vakit].isim}} Vaktine</ion-title>
+            <div *ngFor="let entry of entries">
+                <span *ngIf="getElapsedTime(entry) as elapsed">
+                    <ion-title class="large-timer" style="text-align:center" size="large">{{elapsed.hours}}:{{elapsed.minutes}}:{{elapsed.seconds}}</ion-title>
+                </span>
+            </div>
+            <ion-col class="alignment">
+                <ion-label class= "align" style="text-align:center">{{gun | date : 'dd'}}<br>{{gun | date : 'MMMM' : 'tr'}} {{gun | date : 'yyyy'}}<br>{{gun | date : 'EEEE' : 'tr'}}</ion-label>
+                <ion-row>
+                    <ion-col offset="2" size="8">
+                        <ion-card *ngIf="vakitJson">
+                            <ion-item *ngFor="let a of vakitler">
+                                <ion-label class="ion-text-start">{{a.isim}}</ion-label>
+                                <ion-label class="ion-text-end">{{a.vakit}}</ion-label>
+                            </ion-item>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-col>
+    </ion-grid>
+</ion-content>

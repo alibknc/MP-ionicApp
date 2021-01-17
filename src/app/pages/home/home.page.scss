@@ -1,0 +1,48 @@
+ion-title.large-title {
+    --color: rgb(28, 100, 155);
+    font-size: 24px
+}
+
+ion-title.large-timer {
+  --color: rgb(28, 100, 155);
+  font-size: 4em
+}
+
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+ion-header {
+    --background-color: rgb(202, 52, 52);
+}
+
+ion-toolbar {
+  --background-color: transparent;
+  --ion-color-base: transparent !important;
+}
+
+.background-image {
+    --background: url('/assets/back.jpg') no-repeat center center / cover;
+  }
+  
+ion-col {
+    --ion-column-padding: 0
+  }
+
+ion-grid {
+    --ion-grid-padding: 50
+  }
+
+.alignment {
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    right: 0;
+}

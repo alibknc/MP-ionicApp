@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Geri"></ion-back-button>
+    </ion-buttons>
+    <ion-title>İlçe Seçin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let a of ilceler" [routerLink]="'/home/'">
+      <ion-item>
+        <ion-label (click)="kaydet(a.IlceID)">{{a.IlceAdi}}</ion-label>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
