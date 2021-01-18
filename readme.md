@@ -29,27 +29,27 @@ Tüm dosyaları indirin ve VS Code (vb.) ile açın. Ardından sırasıyla;
 
 ### Ekran Görüntüleri
 
-![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshoots/1.png)
+![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshots/1.png)
 
 > Ana Sayfa.
 
-![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshoots/2.png)
+![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshots/2.png)
 
 > Ülke Seçme Sayfası.
 
-![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshoots/3.png)
+![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshots/3.png)
 
 > Şehir Seçme Sayfası.
 
-![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshoots/4.png)
+![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshots/4.png)
 
 > İlçe Seçme Sayfası.
 
-![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshoots/5.png)
+![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshots/5.png)
 
 > Menü.
 
-![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshoots/6.png)
+![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshots/6.png)
 
 > Ayarlar Sayfası.
 
