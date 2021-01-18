@@ -26,6 +26,11 @@ export class AppComponent implements OnInit {
       icon: 'location'
     },
     {
+      title: 'Kaza Takibi',
+      url: 'kaza',
+      icon: 'location'
+    },
+    {
       title: 'Ayarlar',
       url: 'settings',
       icon: 'settings'

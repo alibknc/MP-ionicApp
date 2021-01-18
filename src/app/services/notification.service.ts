@@ -19,7 +19,7 @@ export class NotificationService {
       notifications: [
         {
           title: title,
-          body: 'Join',
+          body: 'Ezan Vakti',
           id: 1,
           extra: {
             data: 'Pass'

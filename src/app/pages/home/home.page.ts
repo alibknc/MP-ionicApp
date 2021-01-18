@@ -28,6 +28,7 @@ export class HomePage implements OnInit {
   entries: entry[] = [];
   vakit: number = 0;
   sonuc: boolean = false;
+  notify: boolean = false;
 
   public vakitler = [{ isim: "İmsak", vakit: "" }, { isim: "Güneş", vakit: "" }, { isim: "Öğle", vakit: "" }, { isim: "İkindi", vakit: "" }, { isim: "Akşam", vakit: "" }, { isim: "Yatsı", vakit: "" }];
   public vakitJson: {}[];
@@ -110,8 +111,9 @@ export class HomePage implements OnInit {
 
   async sendNotify(){
     let result = await this.dataService.loadSettings();
-    if(result['ayarlar']){
+    if(result['ayarlar'] && this.notify == false){
       await this.notifyService.schedule(this.vakitler[this.vakit].isim);
+      this.notify = true;
     }
   }
 

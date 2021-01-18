@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'third/:id',
     loadChildren: () => import('./pages/third/third.module').then( m => m.ThirdPageModule)
+  },
+  {
+    path: 'kaza',
+    loadChildren: () => import('./pages/kaza/kaza.module').then( m => m.KazaPageModule)
   }
 ];
 

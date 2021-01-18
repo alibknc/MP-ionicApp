@@ -25,6 +25,10 @@ export class DataService {
     await this.storage.set('ayarlar', ayarlar);
   }
 
+  async saveKazalar(kazalar){
+    await this.storage.set('kazalar', kazalar);
+  }
+
   async loadData(){
     return this.storage.get('vakitler').then(val => {
       if (val != null && val != undefined) {
@@ -35,6 +39,14 @@ export class DataService {
 
   async loadSettings(){
     return this.storage.get('ayarlar').then(val => {
+      if (val != null && val != undefined) {
+        return val;
+      }else return null
+    });
+  }
+
+  async loadKazalar(){
+    return this.storage.get('kazalar').then(val => {
       if (val != null && val != undefined) {
         return val;
       }else return null
