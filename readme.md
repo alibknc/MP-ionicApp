@@ -10,7 +10,7 @@ Kaza Takibi sayfasından kaza namazları takip edilebilir. Güncellenen değerle
 
 Uygulamayı Capacitor eklentileri kullanarak geliştirdim. Android cihazda test ettim. Web üzerinde de çalışmaktadır. 8 sayfa ve 2 servisten oluşmaktadır.
 
-###API Kaynağı
+### API Kaynağı
 
 `<Kaynak>` : <https://ezanvakti.herokuapp.com/>
 
@@ -19,14 +19,15 @@ Uygulamayı Capacitor eklentileri kullanarak geliştirdim. Android cihazda test 
 * İlçeler Listesi: /ilce/{SEHIR_KODU}
 * Vakitler: /vakitler/{ILCE_KODU}
 
-###Kurulum
+### Kurulum
 
 Tüm dosyaları indirin ve VS Code (vb.) ile açın. Ardından sırasıyla;
 
 `$ npm install`
+
 `$ ionic serve`
 
-###Ekran Görüntüleri
+### Ekran Görüntüleri
 
 ![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshoots/1.png)
 
