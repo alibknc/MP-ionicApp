@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
     {
       title: 'Kaza Takibi',
       url: 'kaza',
-      icon: 'location'
+      icon: 'timer'
     },
     {
       title: 'Ayarlar',
