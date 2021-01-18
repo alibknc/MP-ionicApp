@@ -46,11 +46,12 @@ Uygulamanın ilk kullanımında açılan başlangıç sayfası ve daha sonrasın
 Tüm dosyaları indirin ve VS Code (vb.) ile açın. Ardından sırasıyla;
 
 `$ npm install`
+
 `$ ionic serve`
 
 ### Ekran Görüntüleri
 
-![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshoots/1.png)
+![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshots/1.png)
 
 > Ana Sayfa.
 
