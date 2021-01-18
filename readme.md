@@ -22,18 +22,5 @@ Uygulamayı Capacitor eklentileri kullanarak geliştirdim. Android cihazda
 test ettim. Web üzerinde de çalışmaktadır. 7 sayfa ve 2 servisten
 oluşmaktadır.
 
-**Ekran Görüntüleri:**
+Ekran görüntüleri readme.pdf dosyasındadır.
 
-![](media/image1.png){width="3.5663713910761157in"
-height="6.33093394575678in"} (Ülke Seçme Sayfası)
-
-![](media/image2.png){width="3.8333333333333335in"
-height="6.872939632545932in"} (Şehir Seçme Sayfası)
-![](media/image3.png){width="3.81332239720035in"
-height="6.833333333333333in"} (İlçe Seçme Sayfası)
-![](media/image4.png){width="4.023810148731409in"
-height="7.159739720034995in"} (Ana Sayfa)
-![](media/image5.png){width="3.9523807961504813in"
-height="7.073173665791776in"} (Menü)
-![](media/image6.png){width="3.7380960192475943in"
-height="6.728571741032371in"} (Ayarlar Sayfası)
