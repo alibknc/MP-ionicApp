@@ -29,13 +29,13 @@ export class KazaPage implements OnInit {
     this.ionViewDidEnter();
   }
 
-  async ionViewDidEnter(){
+  async ionViewDidEnter() {
     let result = await this.dataService.loadKazalar();
-    if(result == null){
+    if (result == null) {
       await this.dataService.saveKazalar(this.vakitler);
       result = await this.dataService.loadKazalar();
     }
-    this.vakitler =  result;
+    this.vakitler = result;
   }
 
   artir(index: number) {
@@ -46,7 +46,7 @@ export class KazaPage implements OnInit {
     this.vakitler[index].qty -= 1;
   }
 
-  async kaydet(){
+  async kaydet() {
     await this.dataService.saveKazalar(this.vakitler);
     this.navCtrl.navigateRoot("/home")
   }

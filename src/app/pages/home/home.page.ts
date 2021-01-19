@@ -84,8 +84,8 @@ export class HomePage implements OnInit {
 
       seconds = totalSeconds;
 
-      if(hours == 0 && minutes == 0 && seconds == 0) {
-        this.sendNotify();
+      if (hours == 0 && minutes == 0 && seconds == 0) {
+        this.sendNotify(this.vakit);
       }
 
       return {
@@ -109,10 +109,10 @@ export class HomePage implements OnInit {
     this.destroyed$.complete();
   }
 
-  async sendNotify(){
+  async sendNotify(vakit: number) {
     let result = await this.dataService.loadSettings();
-    if(result['ayarlar'] && this.notify == false){
-      await this.notifyService.schedule(this.vakitler[this.vakit].isim);
+    if (result['ayarlar'] && this.notify == false) {
+      await this.notifyService.schedule(this.vakitler[vakit].isim);
       this.notify = true;
     }
   }
@@ -129,10 +129,10 @@ export class HomePage implements OnInit {
     this.changeDetector.detectChanges();
   }
 
-  async ionViewDidEnter(){
+  async ionViewDidEnter() {
     let result = await this.dataService.loadData();
     this.vakitJson = result;
-    if(this.vakitJson != null){
+    if (this.vakitJson != null) {
       this.tarihBul();
       this.setVeri(this.vakit);
       this.getElapsedTime(this.entries[0]);

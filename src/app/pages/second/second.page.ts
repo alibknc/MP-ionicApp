@@ -10,7 +10,7 @@ import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
 export class SecondPage implements OnInit {
   ulke: any;
 
-  constructor(private dataService: DataService, private activatedRoute: ActivatedRoute, private router: Router) { 
+  constructor(private dataService: DataService, private activatedRoute: ActivatedRoute, private router: Router) {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
     this.sehirleriGetir(id);
   }
@@ -18,8 +18,8 @@ export class SecondPage implements OnInit {
   public sehirler;
   public sehirID: string;
 
-  sehirleriGetir(sehir: string){
-    this.dataService.getRemoteData("https://ezanvakti.herokuapp.com/sehirler/"+sehir).subscribe(data => {
+  sehirleriGetir(sehir: string) {
+    this.dataService.getRemoteData("https://ezanvakti.herokuapp.com/sehirler/" + sehir).subscribe(data => {
       this.sehirler = data;
     })
   }

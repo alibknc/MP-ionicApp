@@ -9,47 +9,47 @@ export class DataService {
 
   constructor(private http: HttpClient, private storage: Storage) { }
 
-  getLocalData(){
+  getLocalData() {
     return this.http.get("/assets/data/ulkeler.json");
   }
 
-  getRemoteData(link: string){
+  getRemoteData(link: string) {
     return this.http.get(link);
   }
 
-  async saveData(vakitler){
+  async saveData(vakitler) {
     await this.storage.set('vakitler', vakitler);
   }
 
-  async saveSettings(ayarlar){
+  async saveSettings(ayarlar) {
     await this.storage.set('ayarlar', ayarlar);
   }
 
-  async saveKazalar(kazalar){
+  async saveKazalar(kazalar) {
     await this.storage.set('kazalar', kazalar);
   }
 
-  async loadData(){
+  async loadData() {
     return this.storage.get('vakitler').then(val => {
       if (val != null && val != undefined) {
         return val;
-      }else return null
+      } else return null
     });
   }
 
-  async loadSettings(){
+  async loadSettings() {
     return this.storage.get('ayarlar').then(val => {
       if (val != null && val != undefined) {
         return val;
-      }else return null
+      } else return null
     });
   }
 
-  async loadKazalar(){
+  async loadKazalar() {
     return this.storage.get('kazalar').then(val => {
       if (val != null && val != undefined) {
         return val;
-      }else return null
+      } else return null
     });
   }
 }

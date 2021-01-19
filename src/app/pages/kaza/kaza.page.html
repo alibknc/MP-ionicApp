@@ -4,21 +4,21 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Kaza Takibi</ion-title>
-    <ion-buttons (click) = "kaydet()" class="kaydet" slot="end">Kaydet</ion-buttons>
+    <ion-buttons (click)="kaydet()" class="kaydet" slot="end">Kaydet</ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-	<ion-card *ngFor="let vakit of vakitler;let i = index">
-		<ion-card-header>
+  <ion-card *ngFor="let vakit of vakitler;let i = index">
+    <ion-card-header>
       <ion-title>
         {{i+1}}. {{vakit.vakit}} Namazı
       </ion-title>
     </ion-card-header>
-		<ion-item>
+    <ion-item>
       <ion-input type="number" min="0" [(ngModel)]="vakit.qty"></ion-input>
-			<ion-icon name="remove-circle" (click)="azalt(i)" item-right></ion-icon>
-			<ion-icon name="add-circle" (click)="artir(i)" item-right></ion-icon>
-		</ion-item>
-	</ion-card>
+      <ion-icon name="remove-circle" (click)="azalt(i)" item-right></ion-icon>
+      <ion-icon name="add-circle" (click)="artir(i)" item-right></ion-icon>
+    </ion-item>
+  </ion-card>
 </ion-content>

@@ -9,22 +9,22 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ThirdPage implements OnInit {
 
-  constructor(private dataService: DataService, private activatedRoute: ActivatedRoute, private router: Router) { 
+  constructor(private dataService: DataService, private activatedRoute: ActivatedRoute, private router: Router) {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
     this.ilceleriGetir(id);
   }
-  
+
   public ilceler;
   public vakitler;
-  
-  ilceleriGetir(ilce: string){
-    this.dataService.getRemoteData("https://ezanvakti.herokuapp.com/ilceler/"+ilce).subscribe(data => {
+
+  ilceleriGetir(ilce: string) {
+    this.dataService.getRemoteData("https://ezanvakti.herokuapp.com/ilceler/" + ilce).subscribe(data => {
       this.ilceler = data;
     })
   }
 
-  kaydet(vakitler: string){
-    this.dataService.getRemoteData("https://ezanvakti.herokuapp.com/vakitler/"+vakitler).subscribe(data => {
+  kaydet(vakitler: string) {
+    this.dataService.getRemoteData("https://ezanvakti.herokuapp.com/vakitler/" + vakitler).subscribe(data => {
       this.vakitler = data;
       this.dataService.saveData(this.vakitler);
     })

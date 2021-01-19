@@ -12,11 +12,13 @@
             <ion-title class="large-title" style="text-align:center">{{vakitler[vakit].isim}} Vaktine</ion-title>
             <div *ngFor="let entry of entries">
                 <span *ngIf="getElapsedTime(entry) as elapsed">
-                    <ion-title class="large-timer" style="text-align:center" size="large">{{elapsed.hours}}:{{elapsed.minutes}}:{{elapsed.seconds}}</ion-title>
+                    <ion-title class="large-timer" style="text-align:center" size="large">
+                        {{elapsed.hours}}:{{elapsed.minutes}}:{{elapsed.seconds}}</ion-title>
                 </span>
             </div>
             <ion-col class="alignment">
-                <ion-label class= "align" style="text-align:center">{{gun | date : 'dd'}}<br>{{gun | date : 'MMMM' : 'tr'}} {{gun | date : 'yyyy'}}<br>{{gun | date : 'EEEE' : 'tr'}}</ion-label>
+                <ion-label class="align" style="text-align:center">{{gun | date : 'dd'}}<br>{{gun | date : 'MMMM' :
+                    'tr'}} {{gun | date : 'yyyy'}}<br>{{gun | date : 'EEEE' : 'tr'}}</ion-label>
                 <ion-row>
                     <ion-col offset="2" size="8">
                         <ion-card *ngIf="vakitJson">

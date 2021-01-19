@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
 
   async ngOnInit() {
     let result = await this.dataService.loadData();
-    if(result == null) this.router.navigateByUrl('/first');
+    if (result == null) this.router.navigateByUrl('/first');
     else this.router.navigateByUrl('/home');
   }
 }

@@ -9,35 +9,35 @@ const routes: Routes = [
   },
   {
     path: 'about',
-    loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
+    loadChildren: () => import('./pages/about/about.module').then(m => m.AboutPageModule)
   },
   {
     path: 'contact',
-    loadChildren: () => import('./pages/contact/contact.module').then( m => m.ContactPageModule)
+    loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactPageModule)
   },
   {
     path: 'settings',
-    loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
+    loadChildren: () => import('./pages/settings/settings.module').then(m => m.SettingsPageModule)
   },
   {
     path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
   },
   {
     path: 'first',
-    loadChildren: () => import('./pages/first/first.module').then( m => m.FirstPageModule)
+    loadChildren: () => import('./pages/first/first.module').then(m => m.FirstPageModule)
   },
   {
     path: 'second/:id',
-    loadChildren: () => import('./pages/second/second.module').then( m => m.SecondPageModule)
+    loadChildren: () => import('./pages/second/second.module').then(m => m.SecondPageModule)
   },
   {
     path: 'third/:id',
-    loadChildren: () => import('./pages/third/third.module').then( m => m.ThirdPageModule)
+    loadChildren: () => import('./pages/third/third.module').then(m => m.ThirdPageModule)
   },
   {
     path: 'kaza',
-    loadChildren: () => import('./pages/kaza/kaza.module').then( m => m.KazaPageModule)
+    loadChildren: () => import('./pages/kaza/kaza.module').then(m => m.KazaPageModule)
   }
 ];
 
@@ -47,4 +47,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

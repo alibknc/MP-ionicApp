@@ -10,11 +10,11 @@ export class NotificationService {
 
   constructor(private alertCtrl: AlertController) { }
 
-  async permission(){
+  async permission() {
     await LocalNotifications.requestPermissions();
   }
 
-  async schedule(title: string){
+  async schedule(title: string) {
     await LocalNotifications.schedule({
       notifications: [
         {
