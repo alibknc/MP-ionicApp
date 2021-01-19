@@ -32,9 +32,36 @@ Uygulamanın ilk kullanımında açılan başlangıç sayfası ve daha sonrasın
 
 İlk kullanımda ilçeler sayfasından sonra açılan, daha sonra ise uygulamanın başlangıcı olan sayfadır (Kaynak kodlarında ismi *"Home"*). Sayfa açıldığında öncelikle data servis ile localde kaydedilen vakit bilgilerini alır. Ardından sırasıyla *tarihBul(), setVeri(), getElapsedTime()* fonksiyonlarını çağırır. tarihBul ile günün tarihi bilgisi alınır. Bu bilgi ekranda gösterilir. setVeri ile localden alınan veri listesi gezilir ve günün tarihine ait bilgiler filtrelenir. Bu bilgiler de ekranda gösterilir. getElapsedTime sayaç işlemlerinde kullanılır. Metot içinde öncelikle *checkTime()*  ile bir sonraki vaktin hangisi olduğu belirlenir. Günün tüm vakitleri geçmiş ise bir sonraki günün ilk vaktini seçer. Daha sonra belirlenen vakte kalan zaman saat, dakika ve saniyelere ayrılır. Eğer tümü sıfır ise bildirim gönderme fonksiyonu tetiklenir. Bu fonksiyon da bildirim servisi ile ezan vaktini bildirim olarak gönderir. Ekranın sol üst köşesinde menü bulunur.
 
+## Ayarlar Sayfası
+
+Bildirim tercihlerinin belirlendiği sayfadır (Kaynak kodlarında ismi *"Settings"*). Sayfada yalnızca bir adet toggle bulunur. Toggle ile seçilen true-false değer data servis ile veritabanına yazılır. Ana sayfada bildirim göndermeden önce bu değer kontrol edilir.
+
+## Kaza Takibi Sayfası
+
+Kaza namazlarının kaydediliğ listelendiği sayfadır (Kaynak kodlarında ismi *"Kaza"*). Sayfada 5 vakit için bir liste bulunur. Vakitlerin altında kaza adeti ve +/- butonları bulunur. Bunlar ile değerler değiştirilebilir. Değerler güncellendikten sonra sağ üstte bulunan kaydet butonu ile kaydedilir. Data servis ile local veritabanına kaydedilir.
+
+## İletişim ve Hakkında Sayfaları
+
+Uygulama kullanımı ve yapımcı hakkında açıklamaların bulunduğu sayfalardır. (Kaynak kodlarında isimleri *"Contact"* ve *"About"*).
+
+## Data Servisi
+
+Uygulamada veri alışverişi işlemlerinin yapıldığı servistir. (Kaynak kodlarında ismi *"Data Service"*).  Local dosyadan veri okuma, internette bulunan API kaynağından veri okuma, local veritabanına bilgi yazma ve okuma işlemleri yapılmaktadır.
+
+## Bildirim Servisi
+
+Uygulamada bildirim işlemlerinin yapıldığı servistir. (Kaynak kodlarında ismi *"Notification Service"*). Bildirim izni isteme ve vakitlerin isimleri ile bildirim gönderme işlemleri yapılmaktadır.
+
+### Kullanılan Eklentiler
+
+* [@ionic/storage](https://ionicframework.com/docs/angular/storage)
+* [@ionic-native/local-notifications](https://ionicframework.com/docs/native/local-notifications)
+* [Date Pipe](https://angular.io/api/common/DatePipe)
+* [HTTP Client](https://ionicframework.com/docs/native/http)
+
 ### API Kaynağı
 
-`<Kaynak>` : <https://ezanvakti.herokuapp.com/>
+`Kaynak` : <https://ezanvakti.herokuapp.com/>
 
 * Ülkeler Listesi: /ulkeler
 * Şehirler Listesi: /sehirler/{ULKE_KODU}
@@ -71,8 +98,10 @@ Tüm dosyaları indirin ve VS Code (vb.) ile açın. Ardından sırasıyla;
 
 > Menü.
 
+![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshots/7.png)
+
+> Kaza Takibi Sayfası.
+
 ![](https://raw.githubusercontent.com/alibknc/MP-ionicApp/master/screenshots/6.png)
 
 > Ayarlar Sayfası.
-
-----
